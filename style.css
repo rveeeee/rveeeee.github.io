@@ -1,0 +1,12 @@
+.portfolio-logo, .landing-page-text-role, .contact-me-landing-page{
+    color: #FFDE59;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, button {
+    font-family: 'Roboto', sans-serif;
+}
