@@ -12,57 +12,97 @@
     <title>Rey Vincent Ebreo - Portfolio</title>
 </head>
 <body>
-    <section class="bg-[url(/images/landing-page-background.jpg)] bg-cover bg-center h-screen">
+    <!-- Landing Page Section Start-->
+    <section class="bg-[url(/images/landing-page-background.jpg)] bg-cover bg-center h-screen" id="home">
+
+        <!-- Navigation Bar Start -->
         <nav class="navbar flex justify-between p-5">
-            <div class="portfolio-logo font-bold text-2xl tracking-widest"><h1>VINCENT</h1></div>
-            <!-- <div class="nav-links flex sm:hidden text-white">
-                <ul>HOME</ul>
-                <ul>ABOUT ME</ul>
-                <ul>PROJECTS</ul>
-                <ul>CONTACT ME</ul>
-            </div> -->
-            <div class="menu-icon h-8 w-8 md:hidden">
+            <!-- Logo/Name -->
+            <a href="/index.html"><div class="portfolio-logo font-bold text-2xl tracking-widest lg:text-3xl"><h1>VINCENT</h1></div></a>
+            <!-- Navigation Bar Links -->
+            <div class="nav-links flex hidden text-white md:block flex flex-row space-x-8 px-5 font-semibold">
+                <a href="/index.html" class="text-[#FFDE59] cursor-pointer">HOME</a>
+                <a href="">ABOUT ME</a>
+                <a href="">PROJECTS</a>
+                <a href="">CONTACT ME</a>
+            </div>
+            <!-- Navigation Bar Hamburger Menu -->
+            <div class="menu-icon h-8 w-8 sm:h-10 sm:w-10 md:hidden">
                 <img src="/images/svg/hamburger-menu-svgrepo-com.svg" alt="">
             </div>
         </nav>
+        <!-- Navigation Bar End -->
 
+        <!-- Landing Page Text -->
         <div class="landing-page-content flex text-white p-5 ">
-            <div class="landing-page-text border-red-500 border-2 ">
-                <h1 class="text-lg font-bold">Hi, I’m Rey Vincent E. Ebreo</h1>
-                <p class="landing-page-text-role font-bold italic mb-4 drop-shadow-current">Web Developer | UI/UX Designer | IT Graduate</p>
-                <p class="mb-6 text-justify">I design and develop responsive, user-focused websites that solve real problems. With experience in full-stack development using HTML, CSS, JavaScript, Django, and WordPress, I bring ideas to life through clean code and intuitive design.</p>
+            <div class="landing-page-text lg:w-1/2">
+                <h1 class="text-lg font-bold sm:text-2xl">Hi, I’m Rey Vincent E. Ebreo</h1>
+                <p class="landing-page-text-role font-bold italic mb-2 sm:text-md">Web Developer | UI/UX Designer | IT Graduate</p>
+                <p class="mb-3 text-justify sm:text-lg">I design and develop responsive, user-focused websites that solve real problems. With experience in full-stack development using HTML, CSS, JavaScript, Django, and WordPress, I bring ideas to life through clean code and intuitive design.</p>
                 <a href="files/EBREO,Rey Vincent_CV.pdf" download>
-                <button class="bg-white text-black px-4 py-2 rounded hover:bg-yellow-700 hover:text-white transition duration-300">
+                
+                <button class="bg-white text-black px-4 py-2 rounded hover:bg-yellow-700 hover:text-white transition duration-300 ">
                     Download resume
                 </button>
             </a>
             </div>
+            <!-- Landing Page Image -->
+            <div class="landing-page-image absolute -bottom-1 right-5 h-full w-1/2 px-5 hidden lg:block">
+                <img src="/images/Rey Vincent Ebreo.png" alt="Profile Picture" class="w-full h-full">
+            </div>
         </div>
 
+        <!-- Contact Me Landing Page -->
         <div class="contact-me-landing-page absolute bottom-5 left-5">
-            <p class="italic font-bold">Contact Me</p>
+            <p class="italic font-bold sm:text-lg">Contact Me</p>
             <div class="social-media-links flex space-x-4 mt-2 text-sm text-white font-semibold">
                 <a href="https://www.facebook.com/rv.ebreo1234/" target="_blank">
-                    <img src="/images/svg/facebook-svgrepo-com.svg" alt="Facebook" class="h-8 w-8 mx-auto hover:opacity-70 transition duration-300 bg-white rounded-sm">
+                    <img src="/images/svg/facebook-svgrepo-com.svg" alt="Facebook" class="h-8 w-8 sm:h-10 sm:w-10 mx-auto hover:opacity-70 transition duration-300 bg-white rounded-md p-1">
                     <p>Facebook</p>
                 </a>
                 <a href="https://github.com/rveeeee" target="_blank">
-                    <img src="/images/svg/github-142-svgrepo-com.svg" alt="Instagram" class="h-8 w-8 mx-auto hover:opacity-70 transition duration-300 bg-white rounded-sm">
+                    <img src="/images/svg/github-142-svgrepo-com.svg" alt="Instagram" class="h-8 w-8 sm:h-10 sm:w-10 mx-auto hover:opacity-70 transition duration-300 bg-white rounded-md p-1">
                     <p>Github</p>
                 </a>
                 <a href="mailto:ebreoreyvincent@gmail.com" target="_blank">
-                    <img src="/images/svg/gmail-svgrepo-com.svg" alt="Gmail" class="h-8 w-8 mx-auto hover:opacity-70 transition duration-300 bg-white rounded-sm">
+                    <img src="/images/svg/gmail-svgrepo-com.svg" alt="Gmail" class="h-8 w-8 sm:h-10 sm:w-10 mx-auto hover:opacity-70 transition duration-300 bg-white rounded-md p-1">
                     <p>Gmail</p>
                 </a>
                 <a href="https://www.linkedin.com/in/rey-vincent-ebreo-346388375" target="_blank">
-                    <img src="/images/svg/linkedin-svgrepo-com.svg" alt="LinkedIn" class="h-8 w-8  mx-auto hover:opacity-70 transition duration-300 bg-white rounded-sm">
+                    <img src="/images/svg/linkedin-color-svgrepo-com.svg" alt="LinkedIn" class="h-8 w-8 sm:h-10 sm:w-10  mx-auto hover:opacity-70 transition duration-300 bg-white rounded-md p-1">
                     <p>LinkedIn</p>
                 </a> 
             </div>
         </div>
+    </section>
+    <!-- Landing Page Section End-->
+
+    <!-- About Me Section Start -->
+
+    <section id="about-me" class="bg-[url(/images/second-background.jpg)] bg-cover bg-center h-screen">
+
+        <!-- Navigation Bar Start -->
+        <nav class="navbar flex justify-between p-5">
+            <!-- Logo/Name -->
+            <a href="/index.html"><div class="text-shadow-2xl font-bold text-2xl tracking-widest lg:text-3xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"><h1>VINCENT</h1></div></a>
+            <!-- Navigation Bar Links -->
+            <div class="nav-links flex hidden md:block flex flex-row space-x-8 px-5 font-semibold text-black">
+                <a href="/index.html">HOME</a>
+                <a href="" class="text-[#078EFD] cursor-pointer font-extrabold">ABOUT ME</a>
+                <a href="">PROJECTS</a>
+                <a href="">CONTACT ME</a>
+            </div>
+            <!-- Navigation Bar Hamburger Menu -->
+            <div class="menu-icon h-8 w-8 sm:h-10 sm:w-10 md:hidden">
+                <img src="/images/svg/hamburger-menu-svgrepo-com.svg" alt="">
+            </div>
+        </nav>
+        <!-- Navigation Bar End -->
+
 
 
     </section>
-    
+
+    <!-- About Me Section End -->
 </body>
 </html>
