@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.querySelector(".menu-icon");
   const sidebarMenu = document.querySelector(".sidebar-menu");
   const closeIcon = document.querySelector(".close-icon svg");
+  const sidebarLinks = document.querySelectorAll(".sidebar-menu a");
 
   function openSidebar() {
     sidebarMenu.classList.remove("translate-x-full", "opacity-0");
@@ -15,4 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuIcon.addEventListener("click", openSidebar);
   closeIcon.addEventListener("click", closeSidebar);
+
+  for (var i = 0; i < sidebarLinks.length; i++) {
+    sidebarLinks[i].addEventListener("click", closeSidebar);
+  }
 });

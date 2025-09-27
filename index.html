@@ -95,7 +95,7 @@
 
         <!-- Sidebar Menu Start-->
         <div
-          class="sidebar-menu fixed top-0 right-0 h-full w-2/3 bg-white/30 translate-x-full opacity-0 backdrop-blur-lg border border-white/20 shadow-lg z-50 rounded-tl-lg rounded-bl-lg transition-all duration-300 ease-in-out"
+          class="sidebar-menu fixed top-0 right-0 h-full w-full bg-white/30 translate-x-full opacity-0 backdrop-blur-lg border border-white/20 shadow-lg z-50 rounded-tl-lg rounded-bl-lg transition-all duration-300 ease-in-out"
         >
           <div class="close-icon flex justify-end pt-5 mx-5 my-auto">
             <svg
@@ -118,9 +118,7 @@
               </g>
             </svg>
           </div>
-          <div
-            class="sidebarLinks flex flex-col space-y-3 ml-3 font-semibold text-white"
-          >
+          <div class="sidebarLinks flex flex-col mx-3 font-semibold text-white">
             <a href="/index.html">
               <div class="flex items-center p-2">
                 <svg
@@ -143,10 +141,10 @@
                     ></path>
                   </g>
                 </svg>
-                HOME
+                Home
               </div>
             </a>
-
+            <hr class="mx-1" />
             <a href="/index.html#about-me">
               <div class="flex items-center p-2">
                 <svg
@@ -185,9 +183,10 @@
                     ></path>
                   </g>
                 </svg>
-                ABOUT ME
+                About Me
               </div>
             </a>
+            <hr class="mx-1" />
             <a href="#projects">
               <div class="flex items-center p-2">
                 <svg
@@ -281,9 +280,10 @@
                     </g>
                   </g>
                 </svg>
-                PROJECTS
+                Projects
               </div>
             </a>
+            <hr class="mx-1" />
             <a href="#contact-me">
               <div class="flex items-center p-2">
                 <svg
@@ -322,9 +322,10 @@
                     </g>
                   </g>
                 </svg>
-                CONTACT ME
+                Contact Me
               </div>
             </a>
+            <hr class="mx-1" />
           </div>
         </div>
 
@@ -335,11 +336,11 @@
       <!-- Landing Page Text -->
       <div class="landing-page-content flex text-white px-5">
         <div class="landing-page-text lg:w-1/2">
-          <h1 class="font-bold sm:text-2xl lg:text-3xl xl:text-4xl">
+          <h1 class="font-bold text-xl md:text-2xl xl:text-4xl">
             Hi, I’m Rey Vincent E. Ebreo
           </h1>
           <p
-            class="landing-page-text-role text-[#FFDE59] font-bold italic mb-2 sm:text-sm lg:text-lg xl:text-xl"
+            class="landing-page-text-role text-[#FFDE59] font-bold italic mb-2 text-sm lg:text-lg xl:text-xl"
           >
             Web Developer | UI/UX Designer | IT Graduate
           </p>
@@ -545,13 +546,14 @@
 
     <section
       id="about-me"
-      class="bg-[url(/images/second-background.jpg)] bg-cover bg-center h-screen"
+      class="bg-[url(/images/second-background.jpg)] bg-cover bg-center min-h-screen"
     >
       <!-- About Me Content Start-->
-      <div
-        class="px-5 outline flex flex-col md:flex-row md:my-auto h-full pt-3"
-      >
-        <div class="about-me-image mt-10">
+      <h1 class="font-extrabold text-[#078EFD] text-2xl px-5 py-2 md:hidden">
+        ABOUT ME
+      </h1>
+      <div class="px-5 flex flex-col md:flex-row md:my-auto h-full md:pt-5">
+        <div class="about-me-image">
           <img
             src="/images/about-me-picture.jpg"
             alt="About Me"
@@ -652,9 +654,13 @@
           </div>
         </div>
         <div
-          class="about-me-text md:w-1/2 text-justify mt-2 md:ml-3 md:my-auto outline h-full"
+          class="about-me-text md:w-1/2 text-justify mt-2 md:ml-3 md:my-auto h-full"
         >
-          <h1 class="font-extrabold text-[#078EFD] text-2xl pb-2">ABOUT ME</h1>
+          <h1
+            class="font-extrabold text-[#078EFD] text-2xl py-2 hidden md:block"
+          >
+            ABOUT ME
+          </h1>
           <p>
             Hi! I'm <strong>Rey Vincent E. Ebreo</strong>, a passionate and
             detail-oriented
