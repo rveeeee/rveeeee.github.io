@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Sidebar Menu Functionality
   const menuIcon = document.querySelector(".menu-icon");
   const sidebarMenu = document.querySelector(".sidebar-menu");
   const closeIcon = document.querySelector(".close-icon svg");
@@ -21,17 +22,40 @@ document.addEventListener("DOMContentLoaded", function () {
     sidebarLinks[i].addEventListener("click", closeSidebar);
   }
 
-  const slides = document.querySelector(".slides");
-  const slideCount = document.querySelectorAll(".slide").length;
-  let index = 0;
+  // Slideshow Functionality
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-  document.getElementById("#next").addEventListener("click", () => {
-    index = (index + 1) % slideCount;
-    slides.style.transform = `translateX(-${index * 100}%)`;
+  const previousButton = document.querySelectorAll(".previous-button");
+  const nextButton = document.querySelectorAll(".next-button");
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  previousButton.forEach((button) => {
+    button.addEventListener("click", () => plusSlides(-1));
+  });
+  nextButton.forEach((button) => {
+    button.addEventListener("click", () => plusSlides(+1));
   });
 
-  document.getElementById("#prev").addEventListener("click", () => {
-    index = (index - 1 + slideCount) % slideCount;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  });
+  function showSlides(n) {
+    let i;
+    let slideContainers = document.querySelectorAll(".slide-container");
+
+    if (n > slideContainers.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slideContainers.length;
+    }
+
+    for (i = 0; i < slideContainers.length; i++) {
+      slideContainers[i].classList.add("hidden");
+      slideContainers[i].classList.remove("block");
+    }
+    slideContainers[slideIndex - 1].classList.remove("hidden");
+    slideContainers[slideIndex - 1].classList.add("block");
+  }
 });
