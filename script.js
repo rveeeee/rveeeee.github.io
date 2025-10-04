@@ -37,25 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", () => plusSlides(-1));
   });
   nextButton.forEach((button) => {
-    button.addEventListener("click", () => plusSlides(+1));
+    button.addEventListener("click", () => plusSlides(1));
   });
 
   function showSlides(n) {
-    let i;
-    let slideContainers = document.querySelectorAll(".slide-container");
+    const slideContainers = document.querySelectorAll(".slide-container");
 
-    if (n > slideContainers.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slideContainers.length;
-    }
+    if (n > slideContainers.length) slideIndex = 1;
+    if (n < 1) slideIndex = slideContainers.length;
 
-    for (i = 0; i < slideContainers.length; i++) {
-      slideContainers[i].classList.add("hidden");
-      slideContainers[i].classList.remove("block");
-    }
-    slideContainers[slideIndex - 1].classList.remove("hidden");
-    slideContainers[slideIndex - 1].classList.add("block");
+    // Hide all slides
+    slideContainers.forEach((slide) => {
+      slide.classList.add("hidden");
+      slide.classList.remove("block", "md:flex");
+    });
+
+    // Show only the current slide
+    const currentSlide = slideContainers[slideIndex - 1];
+    currentSlide.classList.remove("hidden");
+    currentSlide.classList.add("block", "md:flex");
   }
 });

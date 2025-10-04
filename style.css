@@ -25,5 +25,18 @@ button {
 .scale-up-center-normal {
   animation: scale-up-center-normal 1s ease-in-out 0s 1 normal none;
 }
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* Animations End */
