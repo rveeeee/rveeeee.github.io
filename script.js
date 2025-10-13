@@ -57,4 +57,42 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSlide.classList.remove("hidden");
     currentSlide.classList.add("block", "md:flex");
   }
+
+  // Slideshow Functionality large viewport and above
+  let slideIndexLarge = 1;
+  showSlidesLarge(slideIndexLarge);
+
+  const previousButtonLarge = document.querySelectorAll(".previous-button2");
+  const nextButtonLarge = document.querySelectorAll(".next-button2");
+
+  function plusSlidesLarge(n) {
+    showSlidesLarge((slideIndexLarge += n));
+  }
+
+  previousButtonLarge.forEach((button) => {
+    button.addEventListener("click", () => plusSlidesLarge(-1));
+  });
+  nextButtonLarge.forEach((button) => {
+    button.addEventListener("click", () => plusSlidesLarge(1));
+  });
+
+  function showSlidesLarge(n) {
+    const slideContainersLarge = document.querySelectorAll(
+      ".slide-container-large"
+    );
+
+    if (n > slideContainersLarge.length) slideIndexLarge = 1;
+    if (n < 1) slideIndexLarge = slideContainersLarge.length;
+
+    // Hide all slides
+    slideContainersLarge.forEach((slide) => {
+      slide.classList.add("hidden");
+      slide.classList.remove("block", "md:flex");
+    });
+
+    // Show only the current slide
+    const currentSlideLarge = slideContainersLarge[slideIndexLarge - 1];
+    currentSlideLarge.classList.remove("hidden");
+    currentSlideLarge.classList.add("block", "md:flex");
+  }
 });
