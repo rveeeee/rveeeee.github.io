@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      City Government of Cabuyao Laguna | Rey Vincent E. Ebreo - Portfolio
+    </title>
+  </head>
+  <body>
+    <section
+      class="bg-[url(/images/landing-page-background.jpg)] bg-cover bg-center min-h-screen min-h-[80vh] md:min-h-screen"
+    >
+      <!-- Navigation Bar Start -->
+      <nav class="navbar flex justify-between p-5">
+        <!-- Logo/Name -->
+        <a href="/index.html">
+          <div
+            class="portfolio-logo text-[#FFDE59] font-bold text-2xl lg:text-3xl xl:text-4xl tracking-widest"
+          >
+            <h1>VINCENT</h1>
+          </div>
+        </a>
+        <!-- Navigation Bar Links -->
+        <div
+          class="nav-links hidden md:flex flex-row space-x-8 px-5 font-semibold z-50 my-auto"
+        >
+          <a href="/index.html" class="hover:text-[#078EFD]">HOME</a>
+          <a
+            href="/index.html#about-me"
+            class="hover:text-[#078EFD] transition-colors duration-300"
+            >ABOUT ME</a
+          >
+          <a
+            href="/index.html#projects"
+            class="font-bold text-[#078EFD] transition-colors duration-300"
+            >PROJECTS</a
+          >
+          <a
+            href="index.html#contact-me"
+            class="hover:text-[#078EFD] transition-colors duration-300"
+            >CONTACT ME</a
+          >
+        </div>
+
+        <!-- Navigation Bar Hamburger Menu -->
+        <div class="menu-icon h-8 w-8 sm:h-10 sm:w-10 md:hidden">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="h-8 w-8 text-white transition-colors duration-300"
+          >
+            <line
+              x1="5"
+              y1="7"
+              x2="19"
+              y2="7"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></line>
+            <line
+              x1="5"
+              y1="12"
+              x2="19"
+              y2="12"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></line>
+            <line
+              x1="5"
+              y1="17"
+              x2="19"
+              y2="17"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></line>
+          </svg>
+        </div>
+
+        <!-- Sidebar Menu Start-->
+        <div
+          class="sidebar-menu fixed top-0 right-0 h-full w-full bg-white/30 translate-x-full opacity-0 backdrop-blur-lg border border-white/20 shadow-lg z-50 rounded-tl-lg rounded-bl-lg transition-all duration-300 ease-in-out"
+        >
+          <div class="close-icon flex justify-end pt-5 mx-5 my-auto">
+            <svg
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              class="h-5 w-5 my-auto cursor-pointer"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="#ffffff"
+                  d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="sidebarLinks flex flex-col mx-3 font-semibold text-white">
+            <a href="/index.html">
+              <div class="flex items-center p-2">
+                <svg
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="h-6 w-6 mr-2"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill="#ffffff"
+                      fill-rule="evenodd"
+                      d="M11.2 1.65a2 2 0 00-2.4 0L1.885 6.836a2.017 2.017 0 00-.783 1.907c.145.99.398 2.92.398 4.257 0 1.11-.175 2.638-.32 3.702C1.019 17.899 1.94 19 3.178 19h13.646c1.236 0 2.16-1.1 1.997-2.298-.145-1.064-.32-2.592-.32-3.702 0-1.337.253-3.268.398-4.257a2.017 2.017 0 00-.783-1.907L11.2 1.65zM3.085 8.436L10 3.25l6.915 5.186.001.001.002.003a.025.025 0 010 .013C16.776 9.435 16.5 11.5 16.5 13c0 1.258.193 2.903.338 3.97v.013a.035.035 0 01-.014.017H14v-5a4 4 0 00-8 0v5H3.176c-.001 0-.004-.002-.006-.005a.035.035 0 01-.007-.012.026.026 0 010-.012c.144-1.068.337-2.713.337-3.971 0-1.5-.275-3.565-.419-4.547l.001-.013.003-.004zM8 17h4v-5a2 2 0 10-4 0v5z"
+                    ></path>
+                  </g>
+                </svg>
+                Home
+              </div>
+            </a>
+            <hr class="mx-1" />
+            <a href="/index.html#about-me">
+              <div class="flex items-center p-2">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-2"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                      stroke="#ffffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                      stroke="#ffffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="#ffffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                About Me
+              </div>
+            </a>
+            <hr class="mx-1" />
+            <a href="index.html#projects">
+              <div class="flex items-center p-2">
+                <svg
+                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                  xmlns:cc="http://creativecommons.org/ns#"
+                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                  viewBox="0 0 400 400.00001"
+                  id="svg2"
+                  version="1.1"
+                  inkscape:version="0.91 r13725"
+                  sodipodi:docname="project.svg"
+                  fill="#000000"
+                  class="h-6 w-6 mr-2"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <defs id="defs4"></defs>
+                    <sodipodi:namedview
+                      id="base"
+                      pagecolor="#ffffff"
+                      bordercolor="#666666"
+                      borderopacity="1.0"
+                      inkscape:pageopacity="0.0"
+                      inkscape:pageshadow="2"
+                      inkscape:zoom="1.4"
+                      inkscape:cx="90.721604"
+                      inkscape:cy="166.49755"
+                      inkscape:document-units="px"
+                      inkscape:current-layer="layer1"
+                      showgrid="false"
+                      units="px"
+                      showguides="true"
+                      inkscape:guide-bbox="true"
+                      inkscape:window-width="1920"
+                      inkscape:window-height="1056"
+                      inkscape:window-x="0"
+                      inkscape:window-y="24"
+                      inkscape:window-maximized="1"
+                    >
+                      <sodipodi:guide
+                        position="200.71429,121.42857"
+                        orientation="1,0"
+                        id="guide23298"
+                      ></sodipodi:guide>
+                    </sodipodi:namedview>
+                    <metadata id="metadata7">
+                      <rdf:rdf>
+                        <cc:work rdf:about="">
+                          <dc:format>image/svg+xml</dc:format>
+                          <dc:type
+                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                          ></dc:type>
+                          <dc:title></dc:title>
+                        </cc:work>
+                      </rdf:rdf>
+                    </metadata>
+                    <g
+                      inkscape:label="Capa 1"
+                      inkscape:groupmode="layer"
+                      id="layer1"
+                      transform="translate(0,-652.36216)"
+                    >
+                      <path
+                        style="
+                          opacity: 1;
+                          fill: #ffffff;
+                          fill-opacity: 1;
+                          stroke: none;
+                          stroke-width: 25;
+                          stroke-miterlimit: 4;
+                          stroke-dasharray: none;
+                          stroke-dashoffset: 0;
+                          stroke-opacity: 1;
+                        "
+                        d="m 237.4297,701.86214 0,40 -186,0 0,49.6914 -51.4297,0 0,211.30866 400,0 0,-300.00006 0,-1 -137.5703,0 z m 25,25 112.5703,0 0,251 -50,0 0,-185.42 -0.1621,0 0,-0.8886 -248.4082,0 0,-24.6914 186,0.9453 z"
+                        id="folder"
+                        inkscape:connector-curvature="0"
+                        sodipodi:nodetypes="cccccccccccccccccccccc"
+                      >
+                        <title id="title23866">folder</title>
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                Projects
+              </div>
+            </a>
+            <hr class="mx-1" />
+            <a href="index.html#contact-me">
+              <div class="flex items-center p-2">
+                <svg
+                  viewBox="0 0 512 512"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="#000000"
+                  class="h-6 w-6 mr-2"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>contact-details-filled</title>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="icon"
+                        fill="#ffffff"
+                        transform="translate(42.666667, 85.333333)"
+                      >
+                        <path
+                          d="M426.666667,1.42108547e-14 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,1.42108547e-14 L426.666667,1.42108547e-14 Z M362.666667,213.333333 L234.666667,213.333333 L234.666667,245.333333 L362.666667,245.333333 L362.666667,213.333333 Z M125.333333,155.733333 L109.333333,155.733333 C78.4053873,155.733333 53.3333333,181.333333 53.3333333,213.333333 L53.3333333,213.333333 L181.333333,213.333333 C181.333333,181.333333 156.16,155.733333 125.333333,155.733333 L125.333333,155.733333 Z M362.666667,149.333333 L234.666667,149.333333 L234.666667,181.333333 L362.666667,181.333333 L362.666667,149.333333 Z M117.333333,78.62624 C101.86936,78.62624 89.3333333,91.162267 89.3333333,106.62624 C89.3333333,122.090213 101.86936,134.62624 117.333333,134.62624 C132.797306,134.62624 145.333333,122.090213 145.333333,106.62624 C145.333333,91.162267 132.797306,78.62624 117.333333,78.62624 Z M362.666667,85.3333333 L234.666667,85.3333333 L234.666667,117.333333 L362.666667,117.333333 L362.666667,85.3333333 Z"
+                          id="Combined-Shape"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Contact Me
+              </div>
+            </a>
+            <hr class="mx-1" />
+          </div>
+        </div>
+        <!-- Sidebar Menu End -->
+      </nav>
+      <section>
+        <h1 class="text-center text-2xl font-bold text-white">
+          City Government of Cabuyao, Laguna
+        </h1>
+
+        <div
+          class="px-5 pt-3 flex md:items-center md:flex-row flex-col md:gap-4"
+        >
+          <!-- Image Gallery Start -->
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="md:flex-col md:w-1/2 md:my-auto">
+              <div class="relative my-auto">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-1.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto relative">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                City Government of Cabuyao Landing Page
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Graduate 2024 - 2025
+              </p>
+
+              <p class="leading-relaxed text-gray-700 mb-4">
+                I’m <strong>Rey Vincent Ebreo</strong>, a passionate
+                <strong>Junior Full-Stack Developer</strong> and
+                <strong>Cum Laude</strong>
+                graduate with a strong drive for innovation and excellence. I
+                specialize in transforming ideas into intuitive, high-performing
+                web applications using
+                <strong>HTML, Tailwind CSS, JavaScript, and Django</strong>,
+                combining creativity with clean, efficient code. During my
+                internship with the
+                <strong>City Government of Cabuyao, Laguna</strong> I honed my
+                skills in developing and maintaining responsive systems that
+                improved accessibility and public service. My latest project,
+                <strong>“ANDITO AKO”</strong>, reflects my vision for technology
+                with purpose — a digital mental health platform that empowers
+                students through seamless teleconsultations, real-time
+                communication, and user-first design. I’m dedicated to crafting
+                meaningful digital experiences that not only solve problems but
+                also make technology more human, accessible, and impactful.
+              </p>
+
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="flex-col md:w-1/2 my-auto">
+              <div class="my-auto relative">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-2.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                Media Page
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Intern at City Government of Cabuyao, Laguna (March 2025 -
+                June 2025)
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                During my internship with the
+                <strong>City Government of Cabuyao, Laguna</strong>, I
+                contributed to the design and maintenance of responsive websites
+                using <strong>WordPress</strong> and <strong>Elementor</strong>,
+                ensuring that online content was accessible, visually
+                consistent, and aligned with the city’s public service goals. I
+                also collaborated on
+                <strong>digital presentations and materials</strong> that
+                supported various local government initiatives, showcasing
+                information in a clear and engaging way for both internal and
+                public audiences. In addition, I provided
+                <strong>basic troubleshooting and layout customization</strong>,
+                helping improve workflow efficiency and ensuring smooth updates
+                to the city’s online platforms.
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                As part of my <strong>academic capstone project</strong>, I led
+                the development of a
+                <strong>web-based mental health platform</strong> titled
+                <strong>“ANDITO AKO.”</strong> The system enables students to
+                <strong>book teleconsultations with counselors</strong>,
+                offering both real-time chat functionality and an intuitive user
+                interface designed to promote
+                <strong
+                  >accessible and stigma-free mental health support.</strong
+                >
+                This project highlights my ability to integrate
+                <strong>technical development with social impact</strong>,
+                combining user experience design, backend logic, and secure
+                communication systems to deliver a practical and meaningful
+                digital solution.
+              </p>
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="flex-col md:w-1/2 my-auto">
+              <div class="my-auto relative">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-3.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                City Programs Page
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Intern at City Government of Cabuyao, Laguna (March 2025 -
+                June 2025)
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                During my internship with the
+                <strong>City Government of Cabuyao, Laguna</strong>, I
+                contributed to the design and maintenance of responsive websites
+                using <strong>WordPress</strong> and <strong>Elementor</strong>,
+                ensuring that online content was accessible, visually
+                consistent, and aligned with the city’s public service goals. I
+                also collaborated on
+                <strong>digital presentations and materials</strong> that
+                supported various local government initiatives, showcasing
+                information in a clear and engaging way for both internal and
+                public audiences. In addition, I provided
+                <strong>basic troubleshooting and layout customization</strong>,
+                helping improve workflow efficiency and ensuring smooth updates
+                to the city’s online platforms.
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                As part of my <strong>academic capstone project</strong>, I led
+                the development of a
+                <strong>web-based mental health platform</strong> titled
+                <strong>“ANDITO AKO.”</strong> The system enables students to
+                <strong>book teleconsultations with counselors</strong>,
+                offering both real-time chat functionality and an intuitive user
+                interface designed to promote
+                <strong
+                  >accessible and stigma-free mental health support.</strong
+                >
+                This project highlights my ability to integrate
+                <strong>technical development with social impact</strong>,
+                combining user experience design, backend logic, and secure
+                communication systems to deliver a practical and meaningful
+                digital solution.
+              </p>
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="flex-col md:w-1/2 my-auto">
+              <div class="my-auto relative">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-4.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                City Programs Page - Protection
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Intern at City Government of Cabuyao, Laguna (March 2025 -
+                June 2025)
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                During my internship with the
+                <strong>City Government of Cabuyao, Laguna</strong>, I
+                contributed to the design and maintenance of responsive websites
+                using <strong>WordPress</strong> and <strong>Elementor</strong>,
+                ensuring that online content was accessible, visually
+                consistent, and aligned with the city’s public service goals. I
+                also collaborated on
+                <strong>digital presentations and materials</strong> that
+                supported various local government initiatives, showcasing
+                information in a clear and engaging way for both internal and
+                public audiences. In addition, I provided
+                <strong>basic troubleshooting and layout customization</strong>,
+                helping improve workflow efficiency and ensuring smooth updates
+                to the city’s online platforms.
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                As part of my <strong>academic capstone project</strong>, I led
+                the development of a
+                <strong>web-based mental health platform</strong> titled
+                <strong>“ANDITO AKO.”</strong> The system enables students to
+                <strong>book teleconsultations with counselors</strong>,
+                offering both real-time chat functionality and an intuitive user
+                interface designed to promote
+                <strong
+                  >accessible and stigma-free mental health support.</strong
+                >
+                This project highlights my ability to integrate
+                <strong>technical development with social impact</strong>,
+                combining user experience design, backend logic, and secure
+                communication systems to deliver a practical and meaningful
+                digital solution.
+              </p>
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="flex-col md:w-1/2 my-auto">
+              <div class="my-auto relative">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-5.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                City Programs Page - Protection - Pet Vaccination
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Intern at City Government of Cabuyao, Laguna (March 2025 -
+                June 2025)
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                During my internship with the
+                <strong>City Government of Cabuyao, Laguna</strong>, I
+                contributed to the design and maintenance of responsive websites
+                using <strong>WordPress</strong> and <strong>Elementor</strong>,
+                ensuring that online content was accessible, visually
+                consistent, and aligned with the city’s public service goals. I
+                also collaborated on
+                <strong>digital presentations and materials</strong> that
+                supported various local government initiatives, showcasing
+                information in a clear and engaging way for both internal and
+                public audiences. In addition, I provided
+                <strong>basic troubleshooting and layout customization</strong>,
+                helping improve workflow efficiency and ensuring smooth updates
+                to the city’s online platforms.
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                As part of my <strong>academic capstone project</strong>, I led
+                the development of a
+                <strong>web-based mental health platform</strong> titled
+                <strong>“ANDITO AKO.”</strong> The system enables students to
+                <strong>book teleconsultations with counselors</strong>,
+                offering both real-time chat functionality and an intuitive user
+                interface designed to promote
+                <strong
+                  >accessible and stigma-free mental health support.</strong
+                >
+                This project highlights my ability to integrate
+                <strong>technical development with social impact</strong>,
+                combining user experience design, backend logic, and secure
+                communication systems to deliver a practical and meaningful
+                digital solution.
+              </p>
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="flex-col md:w-1/2 my-auto">
+              <div class="my-auto relative">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-6.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                Departments Page
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Intern at City Government of Cabuyao, Laguna (March 2025 -
+                June 2025)
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                During my internship with the
+                <strong>City Government of Cabuyao, Laguna</strong>, I
+                contributed to the design and maintenance of responsive websites
+                using <strong>WordPress</strong> and <strong>Elementor</strong>,
+                ensuring that online content was accessible, visually
+                consistent, and aligned with the city’s public service goals. I
+                also collaborated on
+                <strong>digital presentations and materials</strong> that
+                supported various local government initiatives, showcasing
+                information in a clear and engaging way for both internal and
+                public audiences. In addition, I provided
+                <strong>basic troubleshooting and layout customization</strong>,
+                helping improve workflow efficiency and ensuring smooth updates
+                to the city’s online platforms.
+              </p>
+              <p class="leading-relaxed text-gray-700 mb-4">
+                As part of my <strong>academic capstone project</strong>, I led
+                the development of a
+                <strong>web-based mental health platform</strong> titled
+                <strong>“ANDITO AKO.”</strong> The system enables students to
+                <strong>book teleconsultations with counselors</strong>,
+                offering both real-time chat functionality and an intuitive user
+                interface designed to promote
+                <strong
+                  >accessible and stigma-free mental health support.</strong
+                >
+                This project highlights my ability to integrate
+                <strong>technical development with social impact</strong>,
+                combining user experience design, backend logic, and secure
+                communication systems to deliver a practical and meaningful
+                digital solution.
+              </p>
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="slide-container slide-container-large fade md:ml-3 lg:ml-5 mb-2 bg-white lg:bg-transparent px-2 py-3 lg:py-5 rounded-md shadow-xl border-2 border-blue-600 block md:flex hidden lg:border-none lg:shadow-none"
+          >
+            <div class="md:flex-col md:w-1/2 md:my-auto">
+              <div class="relative my-auto">
+                <div
+                  class="max-h-[500px] overflow-y-auto rounded-lg shadow-lg mx-auto max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+                >
+                  <img
+                    src="/images/cgo-cabuyao-page-7.png"
+                    alt="About Me"
+                    class="w-full h-auto object-top"
+                  />
+                </div>
+
+                <a
+                  class="previous-button absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❮</a
+                >
+                <a
+                  class="next-button absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 cursor-pointer lg:hidden"
+                  >❯</a
+                >
+              </div>
+            </div>
+
+            <div class="text-justify mx-2 md:w-1/2 md:my-auto relative">
+              <h1
+                class="font-extrabold text-[#078EFD] text-2xl my-auto hidden md:block lg:text-4xl"
+              >
+                Places to Visit Page
+              </h1>
+              <p class="italic hidden md:block text-black/50 mb-3">
+                IT Graduate 2024 - 2025
+              </p>
+
+              <p class="leading-relaxed text-gray-700 mb-4">
+                I’m <strong>Rey Vincent Ebreo</strong>, a passionate
+                <strong>Junior Full-Stack Developer</strong> and
+                <strong>Cum Laude</strong>
+                graduate with a strong drive for innovation and excellence. I
+                specialize in transforming ideas into intuitive, high-performing
+                web applications using
+                <strong>HTML, Tailwind CSS, JavaScript, and Django</strong>,
+                combining creativity with clean, efficient code. During my
+                internship with the
+                <strong>City Government of Cabuyao, Laguna</strong> I honed my
+                skills in developing and maintaining responsive systems that
+                improved accessibility and public service. My latest project,
+                <strong>“ANDITO AKO”</strong>, reflects my vision for technology
+                with purpose — a digital mental health platform that empowers
+                students through seamless teleconsultations, real-time
+                communication, and user-first design. I’m dedicated to crafting
+                meaningful digital experiences that not only solve problems but
+                also make technology more human, accessible, and impactful.
+              </p>
+
+              <div class="flex justify-between mt-4">
+                <!-- PREV button -->
+                <a
+                  class="previous-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <svg
+                    viewBox="0 -6.5 38 38"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>left-arrow</title>
+                      <desc>Created with Sketch.</desc>
+                      <g
+                        id="icons"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="ui-gambling-website-lined-icnos-casinoshunter"
+                          transform="translate(-1641.000000, -158.000000)"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        >
+                          <g
+                            id="1"
+                            transform="translate(1350.000000, 120.000000)"
+                          >
+                            <path
+                              d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                              id="left-arrow"
+                              transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) "
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>PREV</span>
+                </a>
+
+                <!-- NEXT button -->
+                <a
+                  class="next-button2 bg-blue-500 text-white px-5 py-3 font-bold cursor-pointer hidden lg:flex rounded-lg items-center space-x-2"
+                >
+                  <span>NEXT</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Gallery End  -->
+        </div>
+      </section>
+      <!-- Navigation Bar End -->
+    </section>
+    <div
+      id="imageModal"
+      class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+    >
+      <img
+        id="modalImage"
+        class="max-w-3xl max-h-[90vh] rounded-lg shadow-lg"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

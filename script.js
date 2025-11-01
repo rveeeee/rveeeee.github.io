@@ -95,4 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSlideLarge.classList.remove("hidden");
     currentSlideLarge.classList.add("block", "md:flex");
   }
+
+  document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("click", () => {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modalImg.src = img.src;
+      modal.classList.remove("hidden");
+    });
+  });
+
+  document.getElementById("imageModal").addEventListener("click", () => {
+    document.getElementById("imageModal").classList.add("hidden");
+  });
 });
