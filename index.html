@@ -11,6 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "e4L7XxCkgfXCskU1e",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("service_ebreorv", "contact_form", this).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
     <title>Rey Vincent Ebreo - Portfolio</title>
   </head>
   <body>
@@ -338,15 +366,16 @@
           <p
             class="landing-page-text-role text-[#FFDE59] font-bold italic mb-2 text-sm lg:text-lg xl:text-xl"
           >
-            Web Developer | UI/UX Designer | IT Graduate
+            Web Developer | UI/UX Designer
           </p>
           <p
             class="mb-3 text-justify sm:text-lg lg:text-lg xl:text-xl leading-relaxed"
           >
-            I design and develop responsive, user-focused websites that solve
-            real problems. With experience in full-stack development using HTML,
-            CSS, JavaScript, Django, and WordPress, I bring ideas to life
-            through clean code and intuitive design.
+            I create responsive, user-centered websites that address real
+            challenges—whether it’s improving user experience, streamlining
+            processes, or establishing a strong online presence. With full-stack
+            experience in HTML, CSS, JavaScript, Django, and WordPress, I turn
+            ideas into functional, purposeful solutions that deliver results.
           </p>
           <a href="files/EBREO,Rey Vincent_CV.pdf" download>
             <button
@@ -1883,24 +1912,17 @@
       <div
         class="mx-5 rounded-lg p-3 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl"
       >
-        <form action="">
+        <form id="contact-form">
           <div>
+            <input type="hidden" name="time" value="Mar 10 2025 08:46" />
             <div>
-              <label for="first-name">First Name</label>
+              <label for="name">Name</label>
               <input
                 type="text"
-                id="first-name"
-                name="first-name"
+                id="name"
+                name="name"
                 class="w-full rounded text-black"
-              />
-            </div>
-            <div>
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                class="w-full rounded text-black"
+                required
               />
             </div>
             <div>
@@ -1910,6 +1932,7 @@
                 id="email"
                 name="email"
                 class="w-full rounded text-black"
+                required
               />
             </div>
             <div>
@@ -1919,6 +1942,17 @@
                 id="mobile-number"
                 name="mobile-number"
                 class="w-full rounded text-black"
+                required
+              />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="w-full rounded text-black"
+                required
               />
             </div>
             <div>
@@ -1929,15 +1963,16 @@
                 cols="50"
                 placeholder="Enter your message"
                 class="w-full rounded text-black"
+                required
               ></textarea>
             </div>
             <div class="text-center text-white">
-              <button
+              <input
                 type="submit"
                 class="bg-blue-500 px-6 rounded-md border-white border-2 py-1"
-              >
-                Send
-              </button>
+                value="Send"
+              />
+              Send
             </div>
           </div>
           <!-- <hr class="border-white border-t-2 my-2" /> -->
@@ -1946,106 +1981,126 @@
     </section>
     <!-- Contact Me End -->
     <footer
-      class="bg-[url(/images/footer-bg.jpg)] bg-cover bg-center py-3 text-white rounded text-sm"
+      class="bg-[url(/images/footer-bg.jpg)] bg-cover bg-center py-3 text-white rounded text-sm relative"
     >
-      <div class="flex flex-col justify-center items-center gap-2">
-        <a href="/index.html#home">
-          <svg
-            class="h-6 w-6"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10">
+        <div class="flex flex-col justify-center items-center gap-2">
+          <a href="/index.html#home">
+            <svg
+              class="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 15L10 9.84985C10.2563 9.57616 10.566 9.35814 10.9101 9.20898C11.2541 9.05983 11.625 8.98291 12 8.98291C12.375 8.98291 12.7459 9.05983 13.0899 9.20898C13.434 9.35814 13.7437 9.57616 14 9.84985L19 15"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="/index.html#home" class="hover:text-yellow-300 transition"
+            >Home</a
           >
-            <path
-              d="M5 15L10 9.84985C10.2563 9.57616 10.566 9.35814 10.9101 9.20898C11.2541 9.05983 11.625 8.98291 12 8.98291C12.375 8.98291 12.7459 9.05983 13.0899 9.20898C13.434 9.35814 13.7437 9.57616 14 9.84985L19 15"
-              stroke="#ffffff"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-        <a href="/index.html#home">Home</a>
-        <a href="/index.html#about-me">About Me</a>
-        <a href="/index.html#projects">Projects</a>
-        <a href="/index.html#contact-me">Contact Me</a>
-        <div class="contact-me-landing-page text-[#FFDE59]">
-          <div
-            class="flex space-x-4 justify-evenly mt-2 text-sm text-black font-semibold"
+          <a
+            href="/index.html#about-me"
+            class="hover:text-yellow-300 transition"
+            >About Me</a
           >
-            <a href="tel:+639765811862" target="_blank">
-              <svg
-                class="h-8 w-8 sm:h-10 sm:w-10 p-1"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
-                    stroke="#ffffff"
-                    stroke-width="2"
+          <a
+            href="/index.html#projects"
+            class="hover:text-yellow-300 transition"
+            >Projects</a
+          >
+          <a
+            href="/index.html#contact-me"
+            class="hover:text-yellow-300 transition"
+            >Contact Me</a
+          >
+
+          <div class="contact-me-landing-page">
+            <div
+              class="flex space-x-4 justify-evenly mt-2 text-sm text-black font-semibold"
+            >
+              <a href="tel:+639765811862" target="_blank">
+                <svg
+                  class="h-8 w-8 sm:h-10 sm:w-10 p-1 transition transform hover:scale-110 hover:opacity-80"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a href="mailto:ebreoreyvincent@gmail.com" target="_blank">
-              <svg
-                class="h-8 w-8 sm:h-10 sm:w-10 p-1"
-                viewBox="0 0 192 192"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rey-vincent-ebreo-346388375"
+                target="_blank"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    stroke="#ffffff"
+                <svg
+                  class="h-7 w-7 sm:h-10 sm:w-9 p-1 transition transform hover:scale-110 hover:opacity-80"
+                  fill="#ffffff"
+                  viewBox="0 0 1920 1920"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#ffffff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="12"
-                    d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rey-vincent-ebreo-346388375"
-              target="_blank"
-            >
-              <svg
-                class="h-8 w-8 sm:h-10 sm:w-10 p-1"
-                fill="#ffffff"
-                viewBox="0 0 1920 1920"
-                xmlns="http://www.w3.org/2000/svg"
-                stroke="#ffffff"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z"
-                    fill-rule="evenodd"
-                  ></path>
-                </g>
-              </svg>
-            </a>
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:ebreoreyvincent@gmail.com" target="_blank">
+                <svg
+                  class="h-8 w-8 sm:h-10 sm:w-10 p-1 transition transform hover:scale-110 hover:opacity-80"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      stroke="#ffffff"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                      d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
           </div>
+          <hr class="border-white/20 w-3/4 my-2" />
+          &copy; 2025 Rey Vincent Ebreo. All rights reserved.
         </div>
       </div>
     </footer>
